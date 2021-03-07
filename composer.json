@@ -1,0 +1,34 @@
+{
+    "name": "kekos/form-refill",
+    "description": "Helper class for refilling post data into the HTML form fields",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoffer Lindahl Hassel",
+            "email": "christoffer@kekos.se"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.80",
+        "phpstan/phpstan-phpunit": "^0.12.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kekos\\FormRefill\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kekos\\FormRefill\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse src tests -l 7"
+    }
+}
